@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  background: linear-gradient(to left, #8a88fb 0%, #d079ee 100%);
+  background-repeat: no-repeat;
+
+  height: 100vh;
+}
+
+.card {
+  box-shadow: 0.2rem 0.4rem 0.5rem rgba(70, 70, 70, 0.542);
+  margin: 10rem auto;
+  width: 40rem;
+  height: 60rem;
+  font-size: 2.4rem;
+  background-color: aliceblue;
+
+  text-align: center;
+
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.nice-image {
+  background-image: linear-gradient(to right, #8a88fb74 0%, #d179ee4b 100%),
+    url("../assets/placeholder.jpg");
+  height: 25rem;
+  width: 40rem;
+
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 2rem;
+}
+
+.input {
+  margin-bottom: 1.4rem;
+
+  display: flex;
+}
+
+.work {
+  border-radius: 11px;
+  border: none;
+  width: 30rem;
+  padding: 1rem;
+}
+
+.work:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.3rem #8a88fb74;
+}
+
+.add {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.add-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  stroke: #615fcc;
+}
+
+.tasks {
+  list-style: none;
+  margin-top: 1.6rem;
+  height: 25rem;
+  overflow-y: auto;
+}
+
+.task {
+  margin-bottom: 1.4rem;
+  background-color: #ffff;
+  border-radius: 8px;
+  width: 36rem;
+  box-shadow: 0.2rem 0.4rem 0.5rem rgba(70, 70, 70, 0.315);
+
+  display: flex;
+  font-size: 2rem;
+}
+
+.edit-btns {
+  display: flex;
+
+  gap: 1.2rem;
+}
+
+.tasks button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.edit,
+.check {
+  height: 2rem;
+  width: 2rem;
+}
+
+.close-icon {
+  height: 2rem;
+  width: 2rem;
+  stroke: red;
+}
+
+.check-icon {
+  stroke: rgb(122, 235, 81);
+}
+
+/* Custom scrollbar */
+.tasks::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #dddddd;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #818080;
+  border-radius: 8px;
+}
+
+/* 400px */
+@media (max-width: 25em) {
+  html {
+    font-size: 45%;
+  }
+}
